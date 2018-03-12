@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="28dp"
+            android:contentDescription="@null"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="@string/chat_security"
+            android:textColor="@color/colorPrimary"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/et_background"
+            android:elevation="1dp"
+            android:hint="@string/email"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/et_background"
+            android:elevation="4dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:textColorHint="@color/black"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_remember_me"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@+id/tv_forgot_password"
+                android:layout_toStartOf="@+id/tv_forgot_password"
+                android:maxLines="1"
+                android:text="@string/remember_me"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignBaseline="@id/cb_remember_me"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:maxLines="1"
+                android:text="@string/forgot_password"
+                android:textColor="@color/black" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_blue_background"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_new_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/new_to_chat_create_account"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+</ScrollView>

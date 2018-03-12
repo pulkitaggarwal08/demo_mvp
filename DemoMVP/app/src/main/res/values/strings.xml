@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DemoMVP</string>
+    <string name="chat_security">Chat Security</string>
+    <string name="email">Email</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="new_to_chat_create_account">New to Chat, Create Account?</string>
+
+</resources>
